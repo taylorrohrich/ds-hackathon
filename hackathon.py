@@ -23,7 +23,6 @@ parsedData = parsedData[(parsedData['date'] > np.datetime64(threeMonths))]
 # %%
 
 # matplotlib
-print(threeMonths)
 plt.title('Total confirmed COVID-19 cases per million people')
 plt.xlabel('Date')
 plt.ylabel('Log')
