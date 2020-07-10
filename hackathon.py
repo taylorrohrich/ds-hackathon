@@ -6,8 +6,6 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import datetime
 data = pd.read_csv("covid.csv")
-print(data.head())
-
 
 # %%
 
@@ -93,19 +91,6 @@ fig.update_layout(
         showcoastlines=False,
         projection_type='equirectangular'
     ),
-    annotations=[dict(
-        x=0.55,
-        y=0.1,
-        xref='paper',
-        yref='paper',
-        text='Source: <a href="https://www.cia.gov/library/publications/the-world-factbook/fields/2195.html">\
-            CIA World Factbook</a>',
-        showarrow=False
-    )]
 )
 
 fig.show()
-
-
-# %%
-# %%
